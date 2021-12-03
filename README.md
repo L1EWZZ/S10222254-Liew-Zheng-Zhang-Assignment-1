@@ -7,3 +7,4 @@
 
 >in the aboutMe.js, whenever the radio button is checked, counter starting from 1 will go up by one. but if counter is bigger than 5 (5 pictures in auto slider) then go counter goes back to 1 and show the very first image
 
+>in the family webpage where reader can use arrows to navigate left and right, it basically uses a js script whereby if the arrow is "clicked", machine detects it and -1 +1 to go left and right respectively. But there are some special cases. If we are at first image and user clicks left arrow, machine will make the counter go to 5(5 pictures total) and go the last image. Else do slideLeft function and slide left. If we are at last image and user want to go right, machine will go to the first image, else slide right. Without the 2 ifs, it will not show the first image if user were to be in these 2 scenarios.
