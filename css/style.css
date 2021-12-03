@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Mohave:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+     
+*         
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body
+{
+    background: cornflowerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container
+{
+    position:relative;
+    width:100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: white;
+    margin:50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1)
+}
+.container .left_side
+{
+    position: relative;
+    background: lightblue;
+    padding: 40px;
+}
+h2.nameHeader
+{
+    color:red;
+    font-size: 35px;
+    font-family: 'Bree Serif', serif;
+}
+.profileText
+{
+    position:relative;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid darkblue;
+}
+.profileText .imgBx img
+{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+.contactInfo
+{
+    /**spacing between "student from NP" and first header**/
+    padding-top: 40px;
+}
+.links
+{
+    padding-top: 40px;
+}
+.title
+{
+    /**CONTACT INFO, EDUCATION AND ACHIEVEMENTS, LANGUAGES header**/
+    font-family: 'Mochiy Pop P One', sans-serif;
+    color:darkblue;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.contactInfo ul
+{
+    position: relative;
+}
+.contactInfo ul li
+{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.contactInfo ul li .icon
+{
+    /**symbols for phone, gmail etc**/
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: darkblue;
+}
+.contactInfo ul li span
+{
+    /**all contact info and links**/
+    color: blueviolet;
+    font-weight: 600;
+    font-size: 17px;
+}
+.links ul li
+{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.links ul li a
+{
+    /**href link info "Click Me View Python Project"**/
+    text-decoration: none;
+    color: blueviolet;
+    font-weight: 600;
+    font-size: 17px;
+}
+.contactInfo ul li a
+{
+    color: blueviolet;
+}
+.contactInfo.education li
+{
+    margin-bottom: 15px;
+}
+.contactInfo.education h5
+{
+    /**year numbers**/
+    font-size:17px;
+    color: darkblue;
+    font-weight: 700;
+}
+.contactInfo.education h4:nth-child(2)
+{
+    /**info between school and year**/
+    color: blueviolet;
+    font-weight: 500;
+    font-size: 17.5px;
+}
+.contactInfo.education h4
+{
+    /**school locations**/
+    color:red;
+    font-weight: 500;
+    font-size: 16.5px;
+}
+.container .right_side
+{
+    /**right side of page**/
+    position:relative;
+    background: white;
+    padding: 40px;
+}
+.about
+{
+    /**about me paragraphs**/
+    color:blueviolet;
+    margin-bottom: 50px;
+    margin: 20px 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+.title2
+{
+    /**header**/
+    font-size: 28px;
+    font-family: 'Mohave', sans-serif;
+    margin: 5px 0;
+    color:darkblue;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.interest ul
+{
+    display: grid;
+}
+.interest ul li
+{
+    /**list of things that interest me and past coding experiences**/
+    list-style: none;
+    color:blueviolet;
+    font-weight: 500;
+    margin:10px 0;
+    font-size: 17.5px;
+}
+.interest ul li i
+{
+    color: darkblue;
+    font-size: 18px;
+}
+.sendEmail
+{
+    color: blueviolet;
+    font-weight: 500;
+}
+input.emailInputBox
+{
+    width: 200px;
+    padding:2px 20px;
+}
+input.commentsBox
+{
+    padding:2px 20px;
+}
+input.nameInputBox
+{
+    width:200px;
+    padding:1px 20px;
+}
+input.sendButton 
+{
+    color:blueviolet;
+    width: 90px;
+    font-size: 15px;
+}
+input.deleteButton
+{
+    color:blueviolet;
+    width: 90px;
+    font-size: 15px;
+}
+ul.differentLinks
+{
+    list-style-type: none;
+}
+h3.certHeader
+{
+    max-width: 70%;
+    color: blueviolet;
+}
+p.signedBy
+{
+    max-width: 70%;
+    color: red;
+}
+a.emailText
+{
+    color: red;
+}
+@media (max-width: 576px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  }
+
+

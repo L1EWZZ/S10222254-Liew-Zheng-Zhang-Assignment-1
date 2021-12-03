@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/family.css" type="text/css">
+    <title>About my family</title>
+</head>
+<body>
+    <div class="wrap">
+        <div id="arrow-left" class="arrow"></div>
+        <div id="slider">
+            <div class="slide slide5">
+                <div class="slide-content">
+                    <header>My Family</header>
+                    <span>Comedic and loving, my family consists of my sister, my mother, father and i. Life has not been easy for all of us duing the pandemic, be it mentally or physically. However, with the 
+                         support from each of us, we have pushed through these difficult times and have overcame many life obstacles one after another. One of our hobbies would include
+                         cycling together at East Coast park or playing badminton together every Sunday morning.
+                    </span>
+                        <br>
+                </div>
+            </div>
+            <div class="slide slide1">
+                <div class="slide-content">
+                    <header>My sister</header>
+                    <span>Born a few minutes after me, my twin sister, Liew Tze Ying is now 17 years old and is currently a student at Hwa Chong Junior College
+                        upon graduating from Crescent Girls Secondory School. She is a self-disciplined girl who has taken up taekwondo as a past time curriculum activity
+                        and is a person who would give her all to accomplish her objective. </span>
+                        <br>
+                        <a class="emailText" href="mailto:LTY@gmail.com">Contact My Sister</a>
+                </div>
+            </div>
+            <div class="slide slide2">
+                <div class="slide-content">
+                    <header>My Mother</header>
+                    <br>
+                    <span>A strict yet humorous mother in her 40s, Ms Serene is a person who never gives up no matter the situation. As the stem of my 
+                        family tree, she provides guidance and counseling to the people around her who seek her help. Although serious at times, she is a mother who makes light of tense situations and is a person who bonds everyone together through fun and games.
+                        She now works as a charted accountant and has brought me up to be who i am today. </span>
+                        <br>
+                        <a class="emailText" href="mailto:sereneYim@gmail.com">Contact My Mother</a>
+                </div>
+            </div>
+            <div class="slide slide3">
+                <div class="slide-content">
+                    <header>My Father</header>
+                    <span>A gentle father who hardly raises his voice, Mr Ryan is a strong man and is someone who has been quietly supporting my family since birth. Whenever mother was busy with taking care of my sister and i, my father would always be the man who works quietly both inside 
+                        and outside the house in order to support my busy mother. Working as a senior project manager, many people have come to repsect him for his contributions to the office, and was awarded best sales in 2020.</span>
+                        <br>
+                        <a class="emailText" href="mailto:ryanLiew@yahoo.com">Contact My Father</a>
+                    </div>
+            </div>
+            <div class="slide slide4">
+                <div class="slide-content">
+                    <header>Myself</header>
+                    <br>
+                    <span>Currently 17 years old as of year 2021 and am studying in the Information Technology Course in Ngee Ann Polytechnic. To view more about myself and my past coding experiences please click the below links.</span>
+                    <br>
+                    <a class="emailText" href="aboutMe.html" title="View my life" target="_blank">View eveything about me here</a>
+                    <br>
+                    <a class="emailText" href="pythonWebpage.html" title="View my past python project" target="_blank">Visit my old Python Project</a>
+                </div>
+            </div>
+
+        </div>
+        
+        <div id="arrow-right" class="arrow"></div>
+
+        <script>
+            let sliderImages = document.querySelectorAll('.slide'),
+            arrowLeft = document.querySelector('#arrow-left'),
+            arrowRight = document.querySelector('#arrow-right'),
+            current = 0;
+
+            //clears all images 
+            function reset(){
+                for (let i = 0; i < sliderImages.length; i++){
+                    sliderImages[i].style.display = 'none';
+                }
+            }
+
+            //initialize slider
+            function startSlide(){
+                reset();  //wipe it clean
+                sliderImages[0].style.display = 'block';  
+            }
+
+            //show previous
+            function slideLeft(){
+                reset();
+                sliderImages[current - 1].style.display = 'block';  //3-1 which index becomes 2 the last image
+                current--;  //decrease current by one
+            }
+
+            //show next
+            function slideRight(){
+                reset();
+                sliderImages[current + 1].style.display = 'block';
+                current++;
+            }
+
+            //left arrow clicking 
+            arrowLeft.addEventListener('click', function(){  //once it hears a click, go to the function
+                if (current === 0)  //if we are at 0 the first image, we want it to go to the last image 
+                {
+                    current = sliderImages.length;  //last image is 5
+                }
+                slideLeft();  //go left by minusing 1
+            });  
+
+            //right arrow clicking 
+            arrowRight.addEventListener('click', function(){  //once it hears a click, go to the function
+                if (current === sliderImages.length - 1)  //if current image is last, go to very first image
+                {
+                    current = -1;  //very first image
+                }
+                slideRight();  //go right by adding 1 
+            });  
+
+            startSlide();
+        </script>
+    </div>
+</body>
+</html>

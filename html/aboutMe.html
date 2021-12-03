@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="../css/aboutMe.css">
+    <script src="../javascripts/aboutMe.js"></script>
+</head>
+<body>
+    <div class="allSlides">
+
+        <div class="MainHeader">
+            <h1>My Life's Experiences and Hobbies</h1>
+        </div>
+
+    <!--image slider start-->
+    <div class="slider">
+        <div class="slides">
+            <!--radio buttons start-->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <input type="radio" name="radio-btn" id="radio5">
+            <!--radio buttons end-->
+            <!--slide images start-->
+            <div class="slide first">
+                <img src="../pictures/fam.jpeg" style="width: 100%;" alt="">
+            </div>
+            <div class="slide">
+                <img src="../pictures/certs.jpeg" style="width: 100%;" alt="">
+            </div>
+            <div class="slide">
+                <img src="../pictures/mum and dad.jpeg" style="width: 100%;" alt="">
+            </div>
+            <div class="slide">
+                <img src="../pictures/family4.jpeg" style="width: 100%;" alt="">
+            </div>
+            <div class="slide">
+                <img src="../pictures/moreFamily.jpeg" style="width: 100%;" alt="">
+            </div>
+            <!--slide images end-->
+            <!--automatic navigation start-->
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+                <div class="auto-btn5"></div>
+            </div>
+            <!--automatic navigation end-->
+        </div>
+        <!--manual navigation start-->
+        <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+            <label for="radio5" class="manual-btn"></label>
+        </div>
+        <!--manual navigation end-->
+
+    </div>
+    <div>
+        <br>
+        <input type="radio" name="data" id="aboutMe"><span style="color:red; font-size: larger; font-family: 'Calistoga', cursive;">All about myself</span>
+        <input type="radio" name="data" id="myHobbies"><span style="color:red; font-size: larger; font-family: 'Calistoga', cursive;">My Hobbies</span>
+        <input type="radio" name="data" id="schoolLife"><span style="color:red; font-size: larger; font-family: 'Calistoga', cursive;">School Life</span>
+        <input type="radio" name="data" id="prgSkills"><span style="color:red; font-size: larger; font-family: 'Calistoga', cursive;">Programming Skills</span>
+
+        <br>
+
+        <div class="aboutme" hidden>
+            <h2 class="headerForRadioButton">Everything about me</h2>
+            <p class="Text">Born in Singapore, second November 2004 along with my twin sister Liew Tze Ying, i am a curious and determined student who is willing to sacrifice 
+                time to obtain new knowledge and see to it that i get my objectives accomplished no matter what. I now live with my parents and twin sister in Bukit Panjang Senja Road Block 629.
+                 Before entering Polytechnic, i worked brifly as a Contact Tracer at Ngee Ann City Orchad Road and attended a programming tution course where i obtained my two certificates for the completions
+                 of the C# and C++ programming lessons.
+        </p>
+        </div>
+
+        <div class="myhobbies" hidden>
+            <h2 class="headerForRadioButton">My Hobbies</h2>
+            <p class="Text">Since young, i have always loved playing sports and one sport i am particulaly good at is badminton. Cycling with my family is also another common past time. Reading is also another common 
+                hobby of mine since my parents have been constantly reminding me since young that reading books would allow me to obtain new knowledge. Some of my favourite authors would include Rick Riordon and Agatha Christie.
+                Doing programming exercises everyday is also another habit of mine as i like to sharpen my programming skills day by day.
+            </p>
+            </div>
+
+        <div class="schoollife" hidden>
+            <h2 class="headerForRadioButton">My School Life and Achievements</h2>
+            <p class="Text">Entering Henry Park Primary School and graduating with 227 points for my PSLE, i entered West Spring Secondory School and later on graduated with 15 points for my 'O' level Examination. 
+                In Primary school, through months of hard work and practice, i obtained first in class in Primary 4 and a best in progress award in the following year.
+                Curious about programming, i entered the Common ICT course in Ngee Ann Polytechnice and later on qulified for the Information Tchnology course in the following term
+                with a GPA score of 3.35. Joining the Information Technology course has been very fulfilling as it has allowed me to broaden my knowledge on programming through learning about new programming languages such as C# and Javascript.
+            </p>
+        </div>
+
+        <div class="prgskills" hidden>
+            <h2 class="headerForRadioButton">Programming</h2>
+            <p class="Text">In the Common ICT course, i learned about the Python programming language and managed to complete a simple Python game using Python with some help from a few experienced Python 
+                programmers. Upon qualifying and entering the Information Technology course, i started learning about the C# programming language. By attending the C# and C++ programming lessons from G-TEC education centre and with a basic foundation of Python, 
+                my foundation has been built and coding has been easier to handle after entering the IT course in Poly.
+            </p>
+            <div class="contactThem">
+                <a href="../html/pythonWebpage.html" target="_blank">View my Python Project</a>
+            </div>
+            </div>
+
+        <div class="goBackToMainPage">
+            <br>
+            <a href="../html/index.html" style="font-size: large;">Go Back to Main Page</a>
+        </div>
+    </div>
+
+
+</div>
+</body>
+</html>
